@@ -10,6 +10,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: #222;
+  overflow: hidden;
 }
 
 #player {
@@ -26,20 +27,19 @@ body {
   position: absolute;
   width: 30px;
   height: 60px;
-  top: 50%;
-  transform: translateY(-50%);
   border-radius: 50%;
 }
 
 .portal.red { background: red; }
 .portal.blue { background: blue; }
+.portal.green { background: lime; }
+.portal.purple { background: violet; }
 
 .wall {
   position: absolute;
   width: 20px;
-  height: 100%;
+  height: 200px;
   background: gray;
-  top: 0;
 }
 
 #result {
