@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #111;
+  font-family: sans-serif;
+}
+
+#game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+}
+
+#player {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: yellow;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+
+.portal {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.portal.red { background: red; }
+.portal.blue { background: blue; }
+
+.wall {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  background: gray;
+  top: 0;
+}
+
+#result {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+}
